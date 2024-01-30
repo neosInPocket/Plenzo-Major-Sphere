@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UISwitcher : MonoBehaviour
 {
@@ -35,5 +36,10 @@ public class UISwitcher : MonoBehaviour
 	private int Destination(int direction)
 	{
 		return 2208 * direction - 1104;
+	}
+
+	public void LoadGameLevel()
+	{
+		SceneManager.LoadScene("Game");
 	}
 }
