@@ -23,7 +23,7 @@ public class TutorialManagment : MonoBehaviour
 		pauseButton.interactable = false;
 		gameObject.SetActive(true);
 		Touch.onFingerDown += Play;
-		characterText.text = "WELCOME TO PLINKO!";
+		characterText.text = "WELCOME TO PLENZO MAJOR SPHERE!";
 	}
 
 	private void Play(Finger finger)
