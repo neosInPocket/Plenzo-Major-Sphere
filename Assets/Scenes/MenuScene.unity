@@ -5082,7 +5082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fa88ee40f7062a4a80bd32280ff9af6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearOptions: 0
+  clearOptions: 1
   defaultOptions:
     coins: 5
     alreadyEntered: 0

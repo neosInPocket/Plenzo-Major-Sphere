@@ -7,6 +7,7 @@ public class UISwitcher : MonoBehaviour
 {
 	[SerializeField] private GameObject[] panels;
 	[SerializeField] private float speed;
+	private int screenHeight => Screen.height;
 
 	public void Switch(int direction)
 	{
@@ -17,7 +18,7 @@ public class UISwitcher : MonoBehaviour
 	private IEnumerator SwitchTransition(int destination)
 	{
 		var goal = Destination(destination);
-		var magnitude = Mathf.Abs(goal - transform.position.y) / 2208f;
+		var magnitude = Mathf.Abs(goal - transform.position.y) / screenHeight;
 		var direction = (goal - transform.position.y) / magnitude;
 		var currentPosition = transform.position;
 
@@ -25,7 +26,7 @@ public class UISwitcher : MonoBehaviour
 		{
 			currentPosition.y += direction * speed * magnitude * Time.deltaTime;
 			transform.position = currentPosition;
-			magnitude = Mathf.Abs(goal - transform.position.y) / 2208f;
+			magnitude = Mathf.Abs(goal - transform.position.y) / screenHeight;
 			yield return null;
 		}
 
@@ -35,7 +36,7 @@ public class UISwitcher : MonoBehaviour
 
 	private int Destination(int direction)
 	{
-		return 2208 * direction - 1104;
+		return screenHeight * direction - screenHeight / 2;
 	}
 
 	public void LoadGameLevel()
