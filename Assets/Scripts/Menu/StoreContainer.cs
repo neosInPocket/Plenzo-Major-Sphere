@@ -23,7 +23,7 @@ public class StoreContainer : MonoBehaviour
 	public void UpgradeSecond()
 	{
 		OptionsLoader.Options.coins -= secondContainer.Price;
-		OptionsLoader.Options.secondUpgrade++;
+		OptionsLoader.Options.extraTimeUpgrade++;
 		OptionsLoader.SaveOptions();
 		RefreshAll();
 	}

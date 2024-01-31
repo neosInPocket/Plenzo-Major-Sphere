@@ -11,7 +11,7 @@ public class OptionsFile
 	public bool mainTrackEnabled = true;
 	public bool effectsEnabled = true;
 	public int healthUpgrade = 1;
-	public int secondUpgrade = 0;
+	public int extraTimeUpgrade = 0;
 }
 
 

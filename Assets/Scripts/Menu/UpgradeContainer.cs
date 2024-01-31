@@ -32,9 +32,9 @@ public class UpgradeContainer : MonoBehaviour
 		}
 		else
 		{
-			pointer = OptionsLoader.Options.secondUpgrade;
-			buttonInteractable = OptionsLoader.Options.secondUpgrade < 3 && OptionsLoader.Options.coins >= price;
-			upgraded = OptionsLoader.Options.secondUpgrade >= 3;
+			pointer = OptionsLoader.Options.extraTimeUpgrade;
+			buttonInteractable = OptionsLoader.Options.extraTimeUpgrade < 3 && OptionsLoader.Options.coins >= price;
+			upgraded = OptionsLoader.Options.extraTimeUpgrade >= 3;
 		}
 
 		button.interactable = buttonInteractable;
