@@ -70,6 +70,6 @@ public class Timer : MonoBehaviour
 
 	public void Menu()
 	{
-		SceneManager.LoadScene("MenuScene	");
+		SceneManager.LoadScene("MenuScene");
 	}
 }
