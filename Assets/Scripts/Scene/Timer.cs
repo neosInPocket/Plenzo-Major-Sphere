@@ -63,9 +63,9 @@ public class Timer : MonoBehaviour
 
 	private void OnUnPause()
 	{
-		laserGuns.ForEach(x => x.Active = false);
-		playerController.Freeze();
-		started = false;
+		laserGuns.ForEach(x => x.Active = true);
+		playerController.UnFreeze();
+		started = true;
 	}
 
 	public void Menu()

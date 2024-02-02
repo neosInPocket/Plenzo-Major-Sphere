@@ -58565,7 +58565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 4
-  m_AspectRatio: 0.5
+  m_AspectRatio: 0.46191406
 --- !u!114 &1593930540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70104,7 +70104,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2019323979}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 957970770}
+        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
+        m_MethodName: PauseGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2019323979
 MonoBehaviour:
   m_ObjectHideFlags: 0
