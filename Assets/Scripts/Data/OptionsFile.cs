@@ -4,8 +4,8 @@ using UnityEngine;
 [Serializable]
 public class OptionsFile
 {
-	public int coins = 100;
-	public bool alreadyEntered = true;
+	public int coins = 5;
+	public bool alreadyEntered = false;
 
 	public int levelProgress = 1;
 	public bool mainTrackEnabled = true;
